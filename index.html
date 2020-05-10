@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Tejaswini Bahurupi
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <style>
+                        *{
+                            margin:0;
+                            padding: 0;
+                            text-decoration: none;
+                        }
+                        body {
+            
+                font-size: 1em;
+                font-family: "Open Sans", "Helvetica Neue", sans-serif;
+            }
+      
+            .content-footer,
+            .masthead-heading,
+            .masthead-intro {
+            text-align: center;
+            }
+            .container{
+    width: 50%;
+    margin: 0 auto;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #ffcc33;
+  }
+  .bar.back::before{
+    background-color: #a6cfe3;
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+            
+
+            .masthead-intro {
+                margin-bottom: 0.1em;
+                font-family: "Gentium Book Basic", Georgia, serif;
+                font-size: 2em;
+            }
+
+            .masthead-heading {
+                color: rgb(241, 232, 232);
+                margin-top: -0.2em;
+                font-family: "Open Sans", "Helvetica Neue", sans-serif;
+                font-weight: bold;
+                font-size: 6em;
+                letter-spacing: -0.02em;
+                text-transform: uppercase;
+            }
+
+            .introduction-section,
+            .location-section,
+            .questions-section {
+                max-width: 38em;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2em;
+            }
+
+            .introduction-section > p,
+            .location-section > p,
+            .questions-section,
+            .content-footer > p {
+                /* Typography Declarations */
+                font-weight: 300;
+                letter-spacing: 0.05em;
+            }
+
+            .questions-section > h2 {
+                font-family: "Gentium Book Basic", Georgia, serif;
+                font-size: 1.2em;
+                font-weight: bold;
+                /* Layout */
+                margin: 2em 0 1em 0;
+            }
+
+            section > h1 {
+                margin-top: 2em;
+            }
+
+            .content-footer,
+            .masthead-heading,
+            .masthead-intro {
+            text-align: center;
+            }
+
+            .masthead {
+            padding: 6em 0;
+            background-image: url('backimg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-top: solid 1em #FFCF33;
+            }
+
+            .masthead-intro {
+            margin-bottom: 0.1em;
+            font-family: "Gentium Book Basic", Georgia, serif;
+                font-size: 2em;
+            }
+
+            .masthead-heading {
+            margin-top: -0.2em;
+            font-family: "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: bold;
+            font-size: 6em;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            }
+            .introduction > p,
+            .location > p,
+            .content-footer > p {
+            
+                font-weight: 300;
+                letter-spacing: 0.05em;
+            }
+            
+            .introduction-section,
+            .location-section,
+            .questions-section {
+                max-width: 62em;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2em;
+            }
+            .content-footer {
+            margin: 50px 0;
+            padding: 20px 0;
+            text-align: center;
+            background-color: #73A8C2;
+            text-decoration: none;
+            }
+            .social > li {
+            display: inline-block;
+            margin: 0 5px;
+            }
+            .content-footer > p {
+            color: #F7EDE1;
+            }
+            a {
+                font-weight: bold;
+                text-decoration: none;
+                color: #F1C863;
+            }
+            
+            @media only screen and (max-width: 500px) {
+                .masthead {
+                    padding: 3em 0;
+                }
+                .masthead-heading {
+                    font-size: 3em;
+                }
+                .content-footer {
+                    padding: 2em 2.5em;
+            }
+            }
+            .glow {
+        font-size: 70px;
+        color: #ffffff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+        }
+        to {
+          text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+      .blackbox {
+            width: 100%;
+            height: 60%;
+            background-color: mistyrose;
+            color: black;
+            background-image: url("backimg.jpg");
+            position: fixed;
+        }
+        
+        .left {
+            margin-left: 5%;
+            margin-top: -200px;
+        }
+        
+        .center {
+            margin-left: 42%;
+            margin-top: 150px;
+        }
+        
+        .right {
+            margin-left: 80%;
+            margin-top: -200px;
+        }
+        
+        .myinfom {
+            margin: 50px;
+            background-color: white;
+            border: 2px solid black;
+            top: 100px;
+        }
+        
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+        }
+        .line-1{
+            position: relative;
+            top: 50%;  
+            width: 24em;
+            margin: 0 auto;
+            border-right: 2px solid rgba(255,255,255,.75);
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);    
+        }
+
+        .anim-typewriter{
+          animation: typewriter 4s steps(30) 1s 1 normal both,
+                    blinkTextCursor 500ms steps(30) infinite normal;
+        }
+        @keyframes typewriter{
+          from{width: 0;}
+          to{width: 10em;}
+        }
+        @keyframes blinkTextCursor{
+          from{border-right-color: rgba(255,255,255,.75);}
+          to{border-right-color: transparent;}
+        }
+        .card-body {
+            background-image: linear-gradient( rgb(254, 255, 169), white);
+            }
+            .skill-row {
+            padding: 10px;
+            margin-left: 5%;
+            text-align: left;
+            font-family: 'PT Sans', sans-serif;
+            }
+                
+            </style>
+        
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+       </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+       </script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+       </script>
+       <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-image: linear-gradient(to bottom right, red, yellow);">
+        <nav class="navbar navbar-expand-sm bg-red navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About Me</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#part">Participations</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#achieving">Achievements</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html">Contact Me</a>
+              </li>
+            </ul>
+          </nav> 
+            
+        <header class='masthead'>
+            <p class='masthead-intro' style="color: ivory;font-family: cursive;">Hi I'm</p>
+            <h1 class="glow" style="font-family: cursive;">Tejaswini</h1>
+            <br>
+            <br>
+            <p class="line-1 anim-typewriter" style="font-weight: bold;color: rgb(231, 229, 233);font-family: cursive;">Full Stack Developer</p>
+          </header>
+          
+          
+         
+          <section class="location-section">
+              <br>
+            <div class="w3-container w3-card w3-white" style="padding-left: 8%;padding-right: 8%;background: darkcyan;" id="about">
+                <h2 class="w3-text-red w3-padding-16" style="text-align: center;font-weight: bold;font-family: cursive;font-size: 40px;"><i class="fas fa-user-circle fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>About Me</h2>
+                <div class="w3-container" style="text-align: center;background: rgb(182, 223, 223);">
+                    <br><h2 style="color: rgb(255, 51, 0);font-weight: bold;">Tejaswini Ashok Bahurupi</h2>
+                    <h4 style="color: rgb(189, 74, 29);font-weight: bold;">Student At Sarvajanik college of Engineering and Technology</h4>
+                    <p style="color: rgb(83, 13, 104);font-weight: bold;"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-purple"></i>tejaswinibahurupi@gmail.com</p>
+                    <p style="color: rgb(83, 13, 104);font-weight: bold;"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple"></i>+91 9265257134</p>
+                    <br>
+                    <hr>
+                    <p style="color: rgb(23, 2, 58);font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello there! My name is Tejaswini Bahurupi.
+                    I'm BTech student of Computer Engineering at Sarvajanik College of Engineering and Technology located in Surat,Gujarat.I was born and raised in Surat.I passed my 12th in science stream with 90% from GHSEB.I have currently 9.1 CPI in my academics.
+                 </p>
+                 <hr>
+                    <p style="color: rgb(23, 2, 58);font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I like to cook. I believe cooking gives me immense pleasure because it can give us tasty and healthy food at home.I also like dancing very much though I often take part in different dance competitions.</p>
+                 <hr>
+                 <p style="color: rgb(23, 2, 58);font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have learned lots of important aspects about computer science throughout my years in college.For example, I have learned about c,c++,java,php and python programming languages.I learned django framework and have good grip on frontend and backend development.Currently,I am learning Machine learning and Deep learning and as ML and DL are the key skills in today's world.</p>
+                 <br>
+                 <br>
+                </div>
+            </div>
+            <div class="w3-container w3-card w3-white" style="padding-left: 8%;padding-right: 8%;background: darkcyan;" id="skills">
+                <br>
+                <h2 class="w3-text-red w3-padding-16" style="text-align: center;font-weight: bold;font-family: cursive;font-size: 40px;"><i class="fas fa-wrench fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Skills And Languages</h2>
+                <br>
+                <div class="w3-container w3-card w3-purple" style="padding-left: 8%;" id="achieve">
+                    <br>
+                    <br><div class="bar back basic" data-skill=".Net Framework"></div>
+                    <br><div class="bar back intermediate" data-skill="Java"></div>
+                    <br><div class="bar back intermediate" data-skill="C/C++"></div>
+                    <br><div class="bar front advanced" data-skill="Django Framework"></div>
+                    <br><div class="bar front advanced" data-skill="Python and ML/DL"></div>
+                    <br><div class="bar front expert" data-skill="HTML/CSS"></div><br>
+                    <br><div class="bar front expert" data-skill="Cooking/Dancing"></div><br>
+                    <br>
+    
+                </div>
+                <br>
+                <br>
+            </div>
+            <div style="background-color: #E4f9f5" id="part">
+                <br>
+                <h2 class="w3-text-red w3-padding-16" style="text-align: center;font-weight: bold;font-family: cursive;font-size: 40px;"><i class="fas fa-tools fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Participations</h2>
+                <br>  
+                <div class="card-deck">
+                    <div class="skill-row">
+                        <div class="card" style="width: 20rem;height: 25rem">
+                          <img class="card-img-top" src="verve.jpeg" alt="Card image cap" height="200px">
+                          <div class="card-body">
+                            <h3 class="card-title" align="center" style="font-weight: bold;color: rgb(131, 10, 80);">College Events</h3>
+                            <p class="card-text">
+                           
+                               <p style="font-weight: bold;color: rgb(250, 63, 6);">I was in hosting team during college annual function called Verve-2k19</p>
+                               <p style="font-weight: bold;color: rgb(250, 63, 6);">I had also took part in solo-dancing competition during Verve-2k19</p>
+
+                            </p>
+              
+                          </div>
+                        </div>
+                      </div>
+                    <div class="skill-row">
+                        <div class="card" style="width: 20rem;height: 27rem">
+                          <img class="card-img-top" src="ml.jpeg" alt="Card image cap" height="200px">
+                          <div class="card-body">
+                            <h3 class="card-title" align="center" style="font-weight: bold;color: rgb(131, 10, 80);">Internships</h3>
+                            <p class="card-text">
+                           
+                               <p style="font-weight: bold;color: rgb(250, 63, 6);">I had done my Summer ML-AI internship in Expertshub at Pune in 2k19</p>
+                            
+                            </p>
+              
+                          </div>
+                        </div>
+                      </div>
+                      <div class="skill-row">
+                        <div class="card" style="width: 20rem;height: 30rem">
+                          <img class="card-img-top" src="hack.jpeg" alt="Card image cap" height="200px">
+                          <div class="card-body">
+                            <h3 class="card-title" align="center" style="font-weight: bold;color: rgb(131, 10, 80);">Hackthons</h3>
+                            <p class="card-text">
+                           
+                               <p style="font-weight: bold;color: rgb(250, 63, 6);">Team Based Hackthon "Hack-infinity-2.0" at DAIICT, Gandhinagar in Feb,2020 where my team made a model based on GAN networks.</p>
+                            
+                            </p>
+              
+                          </div>
+                        </div>
+                      </div>
+            
+                    <div class="skill-row">
+                      <div class="card" style="width: 20rem;height: 30rem">
+                        <img class="card-img-top" src="ws.jpg" alt="Card image cap" height="200px">
+                        <div class="card-body">
+                          <h3 class="card-title" align="center" style="font-weight: bold;color: rgb(131, 10, 80);">Workshops</h3>
+                          <p class="card-text">
+                         
+                             <p style="font-weight: bold;color: rgb(250, 63, 6);">I had attended workshop on python-2k19 for data science held in our college under CSI.</p>
+                             <p style="font-weight: bold;color: rgb(250, 63, 6);">I also had completed workshop for IOT using Raspberry Pi held in our college under CSI.</p>
+
+                          </p>
+            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+                <div class="w3-container w3-card w3-white" style="padding-left: 8%;padding-right: 8%;background: darkcyan;" id="achieving">
+                    <br>
+                    <h2 class="w3-text-red w3-padding-16" style="text-align: center;font-weight: bold;font-family: cursive;font-size: 40px;"><i class="fas fa-award fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Achievements</h2>
+                    <br>
+                <div class="w3-row-padding w3-padding-16">
+                    <div class="w3-third w3-margin-bottom" style="border:darkred;">
+                      <img src="en.PNG" alt="Athlete" style="width:90% ;height: 200px;">
+                      <div class="w3-container w3-white">
+                        <br> <h5 style="color: rgb(79, 12, 112);">My team hot 2nd rank in Entrepreneurship-camp-2k18 held in our college.</h5>
+                        <br>
+                      </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                      <img src="updates.PNG" alt="paint" style="width:90%;height: 200px;">
+                      <div class="w3-container w3-white">
+                        <br>
+                        <h5 style="color: rgb(79, 12, 112);">I got 2nd prize in Poster Making in category Sustainable Computing during college event-updates-2k18. </h5>
+                        <br>
+                      </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                      <img src="dance.png" alt="carrom" style="width:90%;height: 200px;">
+                      <div class="w3-container w3-white">
+                        <br>  <h5 style="color: rgb(79, 12, 112);">I had won inter-school dance competitions twice during my schools days.</h5>
+                        <br></div>
+                    </div>
+                  </div> 
+                  </div>
+
+          </section>
+        
+    </body>
+</html>
